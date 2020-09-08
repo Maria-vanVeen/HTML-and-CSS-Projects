@@ -1,0 +1,51 @@
+
+
+body {
+	background-color: AntiqueWhite;
+}
+
+p, li, footer {
+	color: DarkBlue;
+}
+
+h1{
+	color: DarkRed;
+	text-shadow: 2px 2px Red;
+}
+
+h3{
+	color: FireBrick;
+}
+
+ol {
+	list-style-type: lower-roman;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.funnyFont {
+	font-family: 'Long Cang', cursive;
+	font-size: 200%;
+}
+/*extra styling not used in .html docs*/
+
+table{
+	border: 1px solid silver;
+}
+
+td:hover {
+	background-color: yellow;
+	color: black;
+}
+
+tr, th {
+	background-color: black;
+	color: cornsilk;
+}
+	
+tr, td {
+	background-color: darkgreen;
+	color: white;
+}
