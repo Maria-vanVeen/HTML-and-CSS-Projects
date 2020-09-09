@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS.css">
+	</head>
+	<body>
+		<h1>Form</h1>
+		<form action="" method="get">
+			Name: <input type="text" name="Name"><br>
+			Email: <input type="email" name="Email"><br>
+			Phone: <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> (in format of xxx-xxx-xxxx)<br>
+			Password: <input type="password" name="Password"><br>
+			Frequency: <input type="radio" name="Frequency" value="Daily">Daily &nbsp; &nbsp; &nbsp; <input type="radio" name="Frequency" value="Weekly">Weekly&nbsp; &nbsp; &nbsp; <input type="radio" name="Frequency" value="Monthly">Monthly &nbsp; &nbsp; &nbsp; <input type="radio" name="Frequency" value="Annualy">Annualy<br>
+			Instuments: <br>
+			<input type="checkbox" name="Instrument1" value="violin">Violin<br>
+			<input type="checkbox" name="Instrument2" value="viola">Viola<br>
+			<input type="checkbox" name="Instrument3" value="cello">Cello<br>
+			<input type="checkbox" name="Instrument4" value="bass">Bass<br>
+			Select a file to upload: <input type="file" name="newfile"><br>
+			Pick your color <input type="color" name="color" value="#ff00ff"><br>
+			Start date: <input type="date" name="Startdate"><br>
+			Date and time: <input type="datetime-local" name="Time"><br>
+			Month and Year: <input type="month" name="MonthYear"><br>
+			Week and year: <input type="week" name="bestweek"><br>
+			Number: <input type="number" name="num" min="50" max="80"><br>
+			URL: <input type="url" name="website" placeholder="http://example.com"><br>
+			Search: <input type="search" name="q"><br>
+			<input type="image" alt="Submit" src="images/button.png" width="100px">
+			<input type="reset" value="Reset">
+			<input type="button" value="Click me!" onclick="alert('This is an alert message')">
+		</form>
+	</body>
+</html>
