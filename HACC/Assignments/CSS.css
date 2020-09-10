@@ -1,3 +1,7 @@
+@font-face {
+  font-family: GloriaHallelujah;
+  src: url(./Fonts/GloriaHallelujah-Regular.ttf);
+}
 
 
 body {
@@ -26,8 +30,7 @@ ul {
 }
 
 .funnyFont {
-	font-family: 'Long Cang', cursive;
-	font-size: 200%;
+	font-family: 'GloriaHallelujah';
 }
 /*extra styling not used in .html docs*/
 
