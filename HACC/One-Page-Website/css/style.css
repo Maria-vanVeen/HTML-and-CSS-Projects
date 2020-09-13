@@ -67,10 +67,6 @@ footer {
     color: #fafac5;
 }
 
-.gallery-container {
-
-}
-
 .photo-container {
     display: inline-block;
     border: 4px solid green;
@@ -80,28 +76,37 @@ footer {
     width: 200px;
 }
 
-img {
+.quilt-images img {
     top: 0;
     left: 0;
     position: absolute;
 }
 
-.image-overview {
-    visibility: visible;
-    z-index: 1;
-}
-
-.image-detail {
+.quilt-detail {
     visibility: hidden;
     opacity: 0;
 }
 
-.image-overview:hover div.image-detail {
+.quilt-images:hover div.quilt-detail {
     display: block;
     visibility: visible;
     opacity: 1;
     transform: scale(2);
-    cursor: pointer;
-    z-index: 2;  
-}S
+}
 
+.form {
+    width: 280px;
+    margin: auto;
+}
+
+.file-input {
+    width: 180px;
+}
+
+.add_quilt {
+    width: 280px;
+}
+
+.add_quilt_submit {
+    width: 288px;
+}
