@@ -1,9 +1,11 @@
 body {
     background-color: white;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    color: green;
 }
 
-h1 {
+h2 {
     text-align: center;
     font-family: "Brush Script MT";
     font-size: 7vmin;
@@ -16,7 +18,6 @@ h1 {
     margin: auto;
     padding: 0;
     border-radius: 20px;
-    
 }
 
 .menu-band {
@@ -119,7 +120,8 @@ footer {
     background: green;
     padding: 5%;
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);  
-    
+    color: white;
+    font-size: 12pt;
 
 }
 
@@ -128,9 +130,9 @@ footer {
     width: 95%;
     border-radius: 6px;
     padding: 5px 8px;
-    color: green;
     font-weight: 600;
     margin-bottom: 10px;
+    border: none;
 }
 .form input[type="text"]::placeholder,
 .form input[type="email"]::placeholder {
