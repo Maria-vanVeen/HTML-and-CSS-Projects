@@ -6,6 +6,7 @@
 
 body {
 	background-color: AntiqueWhite;
+	counter-reset: h2;
 }
 
 p, li, footer {
@@ -21,6 +22,11 @@ h3{
 	color: FireBrick;
 }
 
+h3::before {
+	counter-increment: h2;
+	content: "Chapter " counter(h2) ": ";
+}
+
 ol {
 	list-style-type: lower-roman;
 }
@@ -31,6 +37,8 @@ ul {
 
 .funnyFont {
 	font-family: 'GloriaHallelujah';
+	line-height: .5;
+	margin-top: 0;
 }
 /*extra styling not used in .html docs*/
 
@@ -51,4 +59,11 @@ tr, th {
 tr, td {
 	background-color: darkgreen;
 	color: white;
+}
+
+iframe {
+	width: 700px;
+	height: 400px;
+	border:	2px solid FireBrick;
+	box-shadow: 2px 2px 10px grey;
 }

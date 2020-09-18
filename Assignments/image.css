@@ -1,0 +1,195 @@
+.vid,
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 25%;
+  border-radius: 25px;
+}
+
+.under-overlay {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;  
+}
+
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 20%;
+}
+
+.video-container:hover .vid,
+.image1:hover .image {
+  opacity: 0.3;
+}
+
+.video-container:hover .overlay,
+.image1:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  background-color: red;
+}
+
+
+.f-none {
+  filter: none;
+}
+
+.f-blur {
+  filter: blur(5px);
+}
+.f-brightness {
+  filter: brightness(300%)
+}
+.f-contrast {
+  filter: contrast(300%)
+}
+.f-drop-shadow {
+  filter: drop-shadow(10px 10px 10px red);
+}
+.f-grayscale {
+  filter: grayscale(50%);
+}
+.f-hue-rotate {
+  filter: hue-rotate(90deg);
+}
+.f-invert {
+  filter: invert(100%);
+}
+
+.f-opacity {
+  filter: opacity(50%);
+}
+
+.f-saturate {
+  filter: saturate(200%);
+}
+
+.f-sepia {
+  filter: sepia(100%);
+}
+
+footer {
+  text-align: center;
+  font-weight: 800;
+}
+
+table {
+  border: 2px solid red;
+}
+
+td {
+  padding: 5px 10px 5px 10px;
+}
+
+th {
+  background-color: yellow;
+}
+
+td:nth-child(2) {
+  text-align: center;
+  color: white;
+}
+
+td:nth-child(3) {
+  text-align: center;
+  color: white;
+}
+
+td:nth-child(4) {
+  text-align: center;
+}
+
+.class-names {
+  background-color: red;
+  width: 100px;
+}
+
+.exams {
+  background-color: green;
+  width: 100px;
+}
+
+.final {
+  background-color: lightblue;
+  width: 100px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: blue;
+  font-size: 24px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: lightcoral;
+  position: fixed;
+  top: 0;
+  width:  100%;
+  z-index: 100;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: burlywood;
+}
+
+#home {
+  padding-top: 50px;
+}
+
+h2 {
+  padding-top: 50px;
+}
+
+.column {
+  color: brown;
+  height: auto;
+  width: 50%;
+  float: left;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p:hover {
+  text-decoration: underline dotted red;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    color: green;
+  }
+}
