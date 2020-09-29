@@ -3,6 +3,7 @@
 	<head>
 		<title>Maria's Quilting Club</title>
 		<meta charset="utf-8">
+		<script src="js/one_page_website.js" defer></script>
 		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
@@ -44,7 +45,7 @@
 									<img src="./images/thumb/thumbnail_1.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_1-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_1-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -57,7 +58,7 @@
 									<img src="./images/thumb/thumbnail_2.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_2-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_2-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -70,7 +71,7 @@
 									<img src="./images/thumb/thumbnail_3.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_3-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_3-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -83,7 +84,7 @@
 									<img src="./images/thumb/thumbnail_4.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_4-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_4-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -96,7 +97,7 @@
 									<img src="./images/thumb/thumbnail_5.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_5-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_5-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -109,7 +110,7 @@
 									<img src="./images/thumb/thumbnail_6.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_6-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_6-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -122,7 +123,7 @@
 									<img src="./images/thumb/thumbnail_7.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_7-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_7-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -135,7 +136,7 @@
 									<img src="./images/thumb/thumbnail_8.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_8-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_8-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -148,7 +149,7 @@
 									<img src="./images/thumb/thumbnail_9.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_9-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_9-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -161,7 +162,7 @@
 									<img src="./images/thumb/thumbnail_10.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_10-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_10-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -174,7 +175,7 @@
 									<img src="./images/thumb/thumbnail_11.jpg" alt="quilt" width="200">
 								</div>
 								<div class=quilt-detail>
-									<img src="./images/thumb/thumbnail_11-1.jpg" alt="quilt" width="200">
+									<img src="./images/thumb/thumbnail_11-1.jpg" onclick="openModal()" alt="quilt" width="200">
 								</div>
 							</div>
 						</div>
@@ -184,6 +185,105 @@
 				</div>
 			</section>
 			<!-- END GALLERY -->
+
+			<!-- THE MODAL/LIGHTBOX -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modalContent">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 11</div>
+							<img src="./images/thumb/thumbnail_1-1 - wide.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">2 / 11</div>
+							<img src="./images/thumb/thumbnail_2-1 - wide.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">3 / 11</div>
+							<img src="./images/thumb/thumbnail_3-1 - wide.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">4 / 11</div>
+							<img src="./images/thumb/thumbnail_4-1 - wide.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">5 / 11</div>
+							<img src="./images/thumb/thumbnail_5-1.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">6 / 11</div>
+							<img src="./images/thumb/thumbnail_6-1 - wide.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">7 / 11</div>
+							<img src="./images/thumb/thumbnail_7-1.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">8 / 11</div>
+							<img src="./images/thumb/thumbnail_8-1.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">9 / 11</div>
+							<img src="./images/thumb/thumbnail_9-1 - wide.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">10 / 11</div>
+							<img src="./images/thumb/thumbnail_10-1 - wide.jpg" class="imageWide" alt="">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">11 / 11</div>
+							<img src="./images/thumb/thumbnail_11-1.jpg" class="imageWide" alt="">
+						</div>
+						
+						<!-- next previous controls-->
+						<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+						<a class="next" onclick="plusSlides(1)">&#10095</a>
+
+						<!-- caption text-->
+						<div class="caption_container">
+							<p id="caption"></p>
+						</div>
+
+						<!--thumbnail image controls-->
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Quilt #1">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_2.jpg" onclick="currentSlide(2)" alt="Quilt #2">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_3.jpg" onclick="currentSlide(3)" alt="Quilt #3">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_4.jpg" onclick="currentSlide(4)" alt="Quilt #4">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_5.jpg" onclick="currentSlide(5)" alt="Quilt #5">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_6.jpg" onclick="currentSlide(6)" alt="Quilt #6">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_7.jpg" onclick="currentSlide(7)" alt="Quilt #7">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_8.jpg" onclick="currentSlide(8)" alt="Quilt #8">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_9.jpg" onclick="currentSlide(9)" alt="Quilt #9">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_10.jpg" onclick="currentSlide(10)" alt="Quilt #10">
+						</div>
+						<div class="column">
+							<img class="demo" src="images/thumb/thumbnail_11.jpg" onclick="currentSlide(11)" alt="Quilt #11">
+						</div>
+
+					</div>
+
+				</div>	
+			<!-- END THE MODAL/LIGHTBOX -->
 			
 			<!-- ADD QUILT TO GALLERY -->
 			<section>
