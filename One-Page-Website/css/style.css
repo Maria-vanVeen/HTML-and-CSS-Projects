@@ -1,8 +1,21 @@
+html {
+    background-color: green; /* look sbetter without BG setting, but kept for reference*/
+}
+
 body {
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16pt;
     color: green;
+    opacity: 1;
+    transition: 1s opacity;
+    padding: 0;
+    margin: 0;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 h2 {

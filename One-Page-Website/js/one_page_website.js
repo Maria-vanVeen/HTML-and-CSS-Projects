@@ -1,3 +1,8 @@
+$(function() { //remove fade-out from class after page has loaded
+  $("body").removeClass("fade-out");
+})
+
+
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
