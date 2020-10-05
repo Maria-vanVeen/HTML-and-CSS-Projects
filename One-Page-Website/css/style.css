@@ -1,5 +1,6 @@
 html {
-    background-color: green; /* look sbetter without BG setting, but kept for reference*/
+    background-color: #fafac5; /* look sbetter without BG setting, but kept for reference*/
+    scroll-behavior: smooth;
 }
 
 body {
